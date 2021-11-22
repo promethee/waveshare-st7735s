@@ -51,10 +51,6 @@ def show_credits():
     LCD.LCD_ShowImage(rotated_img,0,0)
     LCD_Config.Driver_Delay_ms(500)
 
-paused = False
-
 while True:
     index = index + 1 if index < len(COLORS) - 1 else 0
     show_credits()
-
-
